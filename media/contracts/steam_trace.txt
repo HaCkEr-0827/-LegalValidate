@@ -1,0 +1,1138 @@
+712146 execve("/usr/bin/steam", ["steam"], 0x7ffcf1102168 /* 51 vars */) = 0
+712146 brk(NULL)                        = 0x561821d34000
+712146 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3740cd8000
+712146 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+712146 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+712146 fstat(3, {st_mode=S_IFREG|0644, st_size=94239, ...}) = 0
+712146 mmap(NULL, 94239, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f3740cc0000
+712146 close(3)                         = 0
+712146 openat(AT_FDCWD, "/lib64/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = 3
+712146 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+712146 fstat(3, {st_mode=S_IFREG|0755, st_size=187336, ...}) = 0
+712146 mmap(NULL, 182560, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3740c93000
+712146 mmap(0x7f3740ca8000, 77824, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7f3740ca8000
+712146 mmap(0x7f3740cbb000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f3740cbb000
+712146 close(3)                         = 0
+712146 openat(AT_FDCWD, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+712146 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2607\0\0\0\0\0\0"..., 832) = 832
+712146 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+712146 fstat(3, {st_mode=S_IFREG|0755, st_size=2448320, ...}) = 0
+712146 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+712146 mmap(NULL, 2038872, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3740aa1000
+712146 mmap(0x7f3740c10000, 479232, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16f000) = 0x7f3740c10000
+712146 mmap(0x7f3740c85000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e3000) = 0x7f3740c85000
+712146 mmap(0x7f3740c8b000, 31832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3740c8b000
+712146 close(3)                         = 0
+712146 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3740a9e000
+712146 arch_prctl(ARCH_SET_FS, 0x7f3740a9e740) = 0
+712146 set_tid_address(0x7f3740a9ea10)  = 712146
+712146 set_robust_list(0x7f3740a9ea20, 24) = 0
+712146 rseq(0x7f3740a9e680, 0x20, 0, 0x53053053) = 0
+712146 mprotect(0x7f3740c85000, 16384, PROT_READ) = 0
+712146 mprotect(0x7f3740cbb000, 16384, PROT_READ) = 0
+712146 mprotect(0x56181fdd6000, 16384, PROT_READ) = 0
+712146 mprotect(0x7f3740d14000, 8192, PROT_READ) = 0
+712146 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+712146 munmap(0x7f3740cc0000, 94239)    = 0
+712146 openat(AT_FDCWD, "/dev/tty", O_RDWR|O_NONBLOCK) = 3
+712146 close(3)                         = 0
+712146 getrandom("\x8b\xac\xf2\x8f\x4c\x53\x68\x99", 8, GRND_NONBLOCK) = 8
+712146 brk(NULL)                        = 0x561821d34000
+712146 brk(0x561821d55000)              = 0x561821d55000
+712146 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+712146 fstat(3, {st_mode=S_IFREG|0644, st_size=233242544, ...}) = 0
+712146 mmap(NULL, 233242544, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f3732c00000
+712146 close(3)                         = 0
+712146 openat(AT_FDCWD, "/usr/lib64/gconv/gconv-modules.cache", O_RDONLY|O_CLOEXEC) = 3
+712146 fstat(3, {st_mode=S_IFREG|0644, st_size=27012, ...}) = 0
+712146 mmap(NULL, 27012, PROT_READ, MAP_SHARED, 3, 0) = 0x7f3740cd1000
+712146 close(3)                         = 0
+712146 futex(0x7f3740c8a72c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+712146 getuid()                         = 1000
+712146 getgid()                         = 1000
+712146 geteuid()                        = 1000
+712146 getegid()                        = 1000
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712146 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712146 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712146 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712146 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712146 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712146 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 uname({sysname="Linux", nodename="fedora", ...}) = 0
+712146 newfstatat(AT_FDCWD, "/home/hacker", {st_mode=S_IFDIR|0700, st_size=1138, ...}, 0) = 0
+712146 newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0700, st_size=1138, ...}, 0) = 0
+712146 newfstatat(AT_FDCWD, "/home", {st_mode=S_IFDIR|0755, st_size=12, ...}, 0) = 0
+712146 newfstatat(AT_FDCWD, "/home/hacker", {st_mode=S_IFDIR|0700, st_size=1138, ...}, 0) = 0
+712146 getpid()                         = 712146
+712146 getppid()                        = 712144
+712146 getpid()                         = 712146
+712146 getppid()                        = 712144
+712146 getpid()                         = 712146
+712146 getppid()                        = 712144
+712146 getpgrp()                        = 712144
+712146 ioctl(2, TIOCGPGRP, [712144])    = 0
+712146 rt_sigaction(SIGCHLD, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 prlimit64(0, RLIMIT_NPROC, NULL, {rlim_cur=62015, rlim_max=62015}) = 0
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 openat(AT_FDCWD, "/usr/bin/steam", O_RDONLY) = 3
+712146 newfstatat(AT_FDCWD, "/usr/bin/steam", {st_mode=S_IFREG|0755, st_size=6968, ...}, 0) = 0
+712146 ioctl(3, TCGETS, 0x7ffcb76a4550) = -1 ENOTTY (Inappropriate ioctl for device)
+712146 lseek(3, 0, SEEK_CUR)            = 0
+712146 read(3, "#!/usr/bin/bash\n#\n# bin_steam.sh"..., 80) = 80
+712146 lseek(3, 0, SEEK_SET)            = 0
+712146 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+712146 fcntl(255, F_GETFD)              = -1 EBADF (Bad file descriptor)
+712146 dup2(3, 255)                     = 255
+712146 close(3)                         = 0
+712146 fcntl(255, F_SETFD, FD_CLOEXEC)  = 0
+712146 fcntl(255, F_GETFL)              = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+712146 fstat(255, {st_mode=S_IFREG|0755, st_size=6968, ...}) = 0
+712146 lseek(255, 0, SEEK_CUR)          = 0
+712146 read(255, "#!/usr/bin/bash\n#\n# bin_steam.sh"..., 6968) = 6968
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 pipe2([3, 4], 0)                 = 0
+712146 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [], 8) = 0
+712146 lseek(255, -6593, SEEK_CUR)      = 375
+712146 rt_sigprocmask(SIG_BLOCK, ~[], [INT TERM CHLD], 8) = 0
+712146 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f3740a9ea10) = 712147
+712146 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD],  <unfinished ...>
+712147 set_robust_list(0x7f3740a9ea20, 24 <unfinished ...>
+712146 <... rt_sigprocmask resumed>NULL, 8) = 0
+712147 <... set_robust_list resumed>)   = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712146 rt_sigaction(SIGCHLD, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 close(4 <unfinished ...>
+712147 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD],  <unfinished ...>
+712146 <... close resumed>)             = 0
+712147 <... rt_sigprocmask resumed>NULL, 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, [INT], [], 8) = 0
+712146 read(3,  <unfinished ...>
+712147 getpid()                         = 712147
+712147 close(255)                       = 0
+712147 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712147 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712147 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712147 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712147 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712147 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712147 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712147 rt_sigaction(SIGCHLD, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712147 rt_sigaction(SIGINT, {sa_handler=0x56181fcee3c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712147 dup2(4, 1)                       = 1
+712147 close(4)                         = 0
+712147 close(3)                         = 0
+712147 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712147 newfstatat(AT_FDCWD, "/usr", {st_mode=S_IFDIR|0755, st_size=168, ...}, 0) = 0
+712147 newfstatat(AT_FDCWD, "/usr/bin", {st_mode=S_IFDIR|0555, st_size=54036, ...}, 0) = 0
+712147 chdir("/usr/bin")                = 0
+712147 fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+712147 write(1, "/usr/bin\n", 9)        = 9
+712146 <... read resumed>"/usr/bin\n", 4096) = 9
+712147 exit_group(0 <unfinished ...>
+712146 read(3,  <unfinished ...>
+712147 <... exit_group resumed>)        = ?
+712146 <... read resumed>"", 4096)      = 0
+712147 +++ exited with 0 +++
+712146 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=712147, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+712146 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 712147
+712146 wait4(-1, 0x7ffcb76a1d50, WNOHANG, NULL) = -1 ECHILD (No child processes)
+712146 rt_sigreturn({mask=[INT]})       = 0
+712146 close(3)                         = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+712146 rt_sigaction(SIGINT, {sa_handler=0x56181fcc79c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc79c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712146 read(255, "export STEAMSCRIPT\nbootstrapscri"..., 6968) = 6593
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 pipe2([3, 4], 0)                 = 0
+712146 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [], 8) = 0
+712146 lseek(255, -6526, SEEK_CUR)      = 442
+712146 rt_sigprocmask(SIG_BLOCK, ~[], [INT TERM CHLD], 8) = 0
+712146 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f3740a9ea10) = 712148
+712146 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD],  <unfinished ...>
+712148 set_robust_list(0x7f3740a9ea20, 24 <unfinished ...>
+712146 <... rt_sigprocmask resumed>NULL, 8) = 0
+712148 <... set_robust_list resumed>)   = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712148 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD],  <unfinished ...>
+712146 rt_sigaction(SIGCHLD, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0},  <unfinished ...>
+712148 <... rt_sigprocmask resumed>NULL, 8) = 0
+712146 <... rt_sigaction resumed>{sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 close(4)                         = 0
+712148 getpid( <unfinished ...>
+712146 rt_sigprocmask(SIG_BLOCK, [INT],  <unfinished ...>
+712148 <... getpid resumed>)            = 712148
+712146 <... rt_sigprocmask resumed>[], 8) = 0
+712146 read(3,  <unfinished ...>
+712148 close(255)                       = 0
+712148 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712148 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712148 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712148 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712148 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712148 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712148 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712148 rt_sigaction(SIGCHLD, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712148 rt_sigaction(SIGINT, {sa_handler=0x56181fcee3c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712148 dup2(4, 1)                       = 1
+712148 close(4)                         = 0
+712148 close(3)                         = 0
+712148 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712148 newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0700, st_size=1138, ...}, 0) = 0
+712148 newfstatat(AT_FDCWD, "/home/hacker/.local/bin/readlink", 0x7ffcb76a3520, 0) = -1 ENOENT (No such file or directory)
+712148 newfstatat(AT_FDCWD, "/home/hacker/bin/readlink", 0x7ffcb76a3520, 0) = -1 ENOENT (No such file or directory)
+712148 newfstatat(AT_FDCWD, "/usr/local/sbin/readlink", 0x7ffcb76a3520, 0) = -1 ENOENT (No such file or directory)
+712148 newfstatat(AT_FDCWD, "/usr/local/bin/readlink", 0x7ffcb76a3520, 0) = -1 ENOENT (No such file or directory)
+712148 newfstatat(AT_FDCWD, "/usr/sbin/readlink", 0x7ffcb76a3520, 0) = -1 ENOENT (No such file or directory)
+712148 newfstatat(AT_FDCWD, "/usr/bin/readlink", {st_mode=S_IFREG|0755, st_size=40936, ...}, 0) = 0
+712148 newfstatat(AT_FDCWD, "/usr/bin/readlink", {st_mode=S_IFREG|0755, st_size=40936, ...}, 0) = 0
+712148 geteuid()                        = 1000
+712148 getegid()                        = 1000
+712148 getuid()                         = 1000
+712148 getgid()                         = 1000
+712148 access("/usr/bin/readlink", X_OK) = 0
+712148 newfstatat(AT_FDCWD, "/usr/bin/readlink", {st_mode=S_IFREG|0755, st_size=40936, ...}, 0) = 0
+712148 geteuid()                        = 1000
+712148 getegid()                        = 1000
+712148 getuid()                         = 1000
+712148 getgid()                         = 1000
+712148 access("/usr/bin/readlink", R_OK) = 0
+712148 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcee3c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712148 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712148 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712148 execve("/usr/bin/readlink", ["readlink", "-f", "/usr/bin/steam"], 0x561821d4a160 /* 52 vars */) = 0
+712148 brk(NULL)                        = 0x5569cb77b000
+712148 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdf5acf4000
+712148 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+712148 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+712148 fstat(3, {st_mode=S_IFREG|0644, st_size=94239, ...}) = 0
+712148 mmap(NULL, 94239, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fdf5acdc000
+712148 close(3)                         = 0
+712148 openat(AT_FDCWD, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+712148 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2607\0\0\0\0\0\0"..., 832) = 832
+712148 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+712148 fstat(3, {st_mode=S_IFREG|0755, st_size=2448320, ...}) = 0
+712148 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+712148 mmap(NULL, 2038872, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdf5aaea000
+712148 mmap(0x7fdf5ac59000, 479232, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16f000) = 0x7fdf5ac59000
+712148 mmap(0x7fdf5acce000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e3000) = 0x7fdf5acce000
+712148 mmap(0x7fdf5acd4000, 31832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdf5acd4000
+712148 close(3)                         = 0
+712148 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdf5aae7000
+712148 arch_prctl(ARCH_SET_FS, 0x7fdf5aae7740) = 0
+712148 set_tid_address(0x7fdf5aae7a10)  = 712148
+712148 set_robust_list(0x7fdf5aae7a20, 24) = 0
+712148 rseq(0x7fdf5aae7680, 0x20, 0, 0x53053053) = 0
+712148 mprotect(0x7fdf5acce000, 16384, PROT_READ) = 0
+712148 mprotect(0x5569c831d000, 4096, PROT_READ) = 0
+712148 mprotect(0x7fdf5ad30000, 8192, PROT_READ) = 0
+712148 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+712148 munmap(0x7fdf5acdc000, 94239)    = 0
+712148 getrandom("\xb4\xfb\xaa\x42\xb2\xfa\xaf\xb6", 8, GRND_NONBLOCK) = 8
+712148 brk(NULL)                        = 0x5569cb77b000
+712148 brk(0x5569cb79c000)              = 0x5569cb79c000
+712148 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+712148 fstat(3, {st_mode=S_IFREG|0644, st_size=233242544, ...}) = 0
+712148 mmap(NULL, 233242544, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fdf4cc00000
+712148 close(3)                         = 0
+712148 readlink("/usr", 0x7ffcffdae890, 1023) = -1 EINVAL (Invalid argument)
+712148 readlink("/usr/bin", 0x7ffcffdae890, 1023) = -1 EINVAL (Invalid argument)
+712148 readlink("/usr/bin/steam", "/usr/lib/steam/bin_steam.sh", 1023) = 27
+712148 readlink("/usr", 0x7ffcffdae890, 1023) = -1 EINVAL (Invalid argument)
+712148 readlink("/usr/lib", 0x7ffcffdae890, 1023) = -1 EINVAL (Invalid argument)
+712148 readlink("/usr/lib/steam", 0x7ffcffdae890, 1023) = -1 EINVAL (Invalid argument)
+712148 readlink("/usr/lib/steam/bin_steam.sh", 0x7ffcffdae890, 1023) = -1 EINVAL (Invalid argument)
+712148 fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+712148 write(1, "/usr/lib/steam/bin_steam.sh\n", 28 <unfinished ...>
+712146 <... read resumed>"/usr/lib/steam/bin_steam.sh\n", 4096) = 28
+712148 <... write resumed>)             = 28
+712146 read(3,  <unfinished ...>
+712148 close(1 <unfinished ...>
+712146 <... read resumed>"", 4096)      = 0
+712148 <... close resumed>)             = 0
+712146 close(3 <unfinished ...>
+712148 close(2 <unfinished ...>
+712146 <... close resumed>)             = 0
+712148 <... close resumed>)             = 0
+712146 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+712148 exit_group(0 <unfinished ...>
+712146 <... rt_sigprocmask resumed>NULL, 8) = 0
+712148 <... exit_group resumed>)        = ?
+712146 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+712146 rt_sigaction(SIGINT, {sa_handler=0x56181fcc79c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 wait4(-1,  <unfinished ...>
+712148 +++ exited with 0 +++
+712146 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 712148
+712146 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc79c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712146 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=712148, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+712146 wait4(-1, 0x7ffcb76a2b90, WNOHANG, NULL) = -1 ECHILD (No child processes)
+712146 rt_sigreturn({mask=[]})          = 0
+712146 read(255, "bootstrapdir=\"$(dirname \"$bootst"..., 6968) = 6526
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 pipe2([3, 4], 0)                 = 0
+712146 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [], 8) = 0
+712146 lseek(255, -6481, SEEK_CUR)      = 487
+712146 rt_sigprocmask(SIG_BLOCK, ~[], [INT TERM CHLD], 8) = 0
+712146 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f3740a9ea10) = 712149
+712149 set_robust_list(0x7f3740a9ea20, 24 <unfinished ...>
+712146 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD],  <unfinished ...>
+712149 <... set_robust_list resumed>)   = 0
+712146 <... rt_sigprocmask resumed>NULL, 8) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+712149 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD],  <unfinished ...>
+712146 <... rt_sigprocmask resumed>NULL, 8) = 0
+712149 <... rt_sigprocmask resumed>NULL, 8) = 0
+712146 rt_sigaction(SIGCHLD, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712149 getpid( <unfinished ...>
+712146 close(4 <unfinished ...>
+712149 <... getpid resumed>)            = 712149
+712146 <... close resumed>)             = 0
+712146 rt_sigprocmask(SIG_BLOCK, [INT],  <unfinished ...>
+712149 close(255 <unfinished ...>
+712146 <... rt_sigprocmask resumed>[], 8) = 0
+712149 <... close resumed>)             = 0
+712146 read(3,  <unfinished ...>
+712149 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712149 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712149 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712149 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712149 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712149 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712149 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712149 rt_sigaction(SIGCHLD, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712149 rt_sigaction(SIGINT, {sa_handler=0x56181fcee3c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712149 dup2(4, 1)                       = 1
+712149 close(4)                         = 0
+712149 close(3)                         = 0
+712149 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712149 newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0700, st_size=1138, ...}, 0) = 0
+712149 newfstatat(AT_FDCWD, "/home/hacker/.local/bin/dirname", 0x7ffcb76a3520, 0) = -1 ENOENT (No such file or directory)
+712149 newfstatat(AT_FDCWD, "/home/hacker/bin/dirname", 0x7ffcb76a3520, 0) = -1 ENOENT (No such file or directory)
+712149 newfstatat(AT_FDCWD, "/usr/local/sbin/dirname", 0x7ffcb76a3520, 0) = -1 ENOENT (No such file or directory)
+712149 newfstatat(AT_FDCWD, "/usr/local/bin/dirname", 0x7ffcb76a3520, 0) = -1 ENOENT (No such file or directory)
+712149 newfstatat(AT_FDCWD, "/usr/sbin/dirname", 0x7ffcb76a3520, 0) = -1 ENOENT (No such file or directory)
+712149 newfstatat(AT_FDCWD, "/usr/bin/dirname", {st_mode=S_IFREG|0755, st_size=32480, ...}, 0) = 0
+712149 newfstatat(AT_FDCWD, "/usr/bin/dirname", {st_mode=S_IFREG|0755, st_size=32480, ...}, 0) = 0
+712149 geteuid()                        = 1000
+712149 getegid()                        = 1000
+712149 getuid()                         = 1000
+712149 getgid()                         = 1000
+712149 access("/usr/bin/dirname", X_OK) = 0
+712149 newfstatat(AT_FDCWD, "/usr/bin/dirname", {st_mode=S_IFREG|0755, st_size=32480, ...}, 0) = 0
+712149 geteuid()                        = 1000
+712149 getegid()                        = 1000
+712149 getuid()                         = 1000
+712149 getgid()                         = 1000
+712149 access("/usr/bin/dirname", R_OK) = 0
+712149 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcee3c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712149 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712149 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712149 execve("/usr/bin/dirname", ["dirname", "/usr/lib/steam/bin_steam.sh"], 0x561821d4a160 /* 52 vars */) = 0
+712149 brk(NULL)                        = 0x557a0d42e000
+712149 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa64f616000
+712149 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+712149 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+712149 fstat(3, {st_mode=S_IFREG|0644, st_size=94239, ...}) = 0
+712149 mmap(NULL, 94239, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa64f5fe000
+712149 close(3)                         = 0
+712149 openat(AT_FDCWD, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+712149 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2607\0\0\0\0\0\0"..., 832) = 832
+712149 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+712149 fstat(3, {st_mode=S_IFREG|0755, st_size=2448320, ...}) = 0
+712149 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+712149 mmap(NULL, 2038872, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa64f40c000
+712149 mmap(0x7fa64f57b000, 479232, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16f000) = 0x7fa64f57b000
+712149 mmap(0x7fa64f5f0000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e3000) = 0x7fa64f5f0000
+712149 mmap(0x7fa64f5f6000, 31832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa64f5f6000
+712149 close(3)                         = 0
+712149 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa64f409000
+712149 arch_prctl(ARCH_SET_FS, 0x7fa64f409740) = 0
+712149 set_tid_address(0x7fa64f409a10)  = 712149
+712149 set_robust_list(0x7fa64f409a20, 24) = 0
+712149 rseq(0x7fa64f409680, 0x20, 0, 0x53053053) = 0
+712149 mprotect(0x7fa64f5f0000, 16384, PROT_READ) = 0
+712149 mprotect(0x5579d7440000, 4096, PROT_READ) = 0
+712149 mprotect(0x7fa64f652000, 8192, PROT_READ) = 0
+712149 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+712149 munmap(0x7fa64f5fe000, 94239)    = 0
+712149 getrandom("\xfb\xb4\x67\x47\xab\x93\x47\x84", 8, GRND_NONBLOCK) = 8
+712149 brk(NULL)                        = 0x557a0d42e000
+712149 brk(0x557a0d44f000)              = 0x557a0d44f000
+712149 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+712149 fstat(3, {st_mode=S_IFREG|0644, st_size=233242544, ...}) = 0
+712149 mmap(NULL, 233242544, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa641400000
+712149 close(3)                         = 0
+712149 fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+712149 write(1, "/usr/lib/steam\n", 15 <unfinished ...>
+712146 <... read resumed>"/usr/lib/steam\n", 4096) = 15
+712149 <... write resumed>)             = 15
+712146 read(3,  <unfinished ...>
+712149 close(1 <unfinished ...>
+712146 <... read resumed>"", 4096)      = 0
+712149 <... close resumed>)             = 0
+712146 close(3 <unfinished ...>
+712149 close(2 <unfinished ...>
+712146 <... close resumed>)             = 0
+712149 <... close resumed>)             = 0
+712146 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+712149 exit_group(0 <unfinished ...>
+712146 <... rt_sigprocmask resumed>NULL, 8) = 0
+712149 <... exit_group resumed>)        = ?
+712146 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+712146 rt_sigaction(SIGINT, {sa_handler=0x56181fcc79c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712149 +++ exited with 0 +++
+712146 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 712149
+712146 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc79c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712146 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=712149, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+712146 wait4(-1, 0x7ffcb76a2b90, WNOHANG, NULL) = -1 ECHILD (No child processes)
+712146 rt_sigreturn({mask=[]})          = 0
+712146 read(255, "log_opened=\n\nlog () {\n    echo \""..., 6968) = 6481
+712146 openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+712146 fstat(3, {st_mode=S_IFREG|0644, st_size=2998, ...}) = 0
+712146 read(3, "# Locale name alias data base.\n#"..., 4096) = 2998
+712146 read(3, "", 4096)                = 0
+712146 close(3)                         = 0
+712146 openat(AT_FDCWD, "/usr/share/locale/en_US.UTF-8/LC_MESSAGES/steam.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+712146 openat(AT_FDCWD, "/usr/share/locale/en_US.utf8/LC_MESSAGES/steam.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+712146 openat(AT_FDCWD, "/usr/share/locale/en_US/LC_MESSAGES/steam.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+712146 openat(AT_FDCWD, "/usr/share/locale/en.UTF-8/LC_MESSAGES/steam.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+712146 openat(AT_FDCWD, "/usr/share/locale/en.utf8/LC_MESSAGES/steam.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+712146 openat(AT_FDCWD, "/usr/share/locale/en/LC_MESSAGES/steam.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+712146 brk(0x561821d76000)              = 0x561821d76000
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 pipe2([3, 4], 0)                 = 0
+712146 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [], 8) = 0
+712146 lseek(255, -1421, SEEK_CUR)      = 5547
+712146 rt_sigprocmask(SIG_BLOCK, ~[], [INT TERM CHLD], 8) = 0
+712146 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f3740a9ea10) = 712150
+712150 set_robust_list(0x7f3740a9ea20, 24 <unfinished ...>
+712146 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD],  <unfinished ...>
+712150 <... set_robust_list resumed>)   = 0
+712146 <... rt_sigprocmask resumed>NULL, 8) = 0
+712150 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD], NULL, 8) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712150 getpid( <unfinished ...>
+712146 rt_sigaction(SIGCHLD, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0},  <unfinished ...>
+712150 <... getpid resumed>)            = 712150
+712146 <... rt_sigaction resumed>{sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 close(4 <unfinished ...>
+712150 close(255 <unfinished ...>
+712146 <... close resumed>)             = 0
+712150 <... close resumed>)             = 0
+712146 rt_sigprocmask(SIG_BLOCK, [INT],  <unfinished ...>
+712150 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+712146 <... rt_sigprocmask resumed>[], 8) = 0
+712150 <... rt_sigprocmask resumed>NULL, 8) = 0
+712146 read(3,  <unfinished ...>
+712150 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712150 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712150 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712150 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712150 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712150 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712150 rt_sigaction(SIGCHLD, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712150 rt_sigaction(SIGINT, {sa_handler=0x56181fcee3c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712150 dup2(4, 1)                       = 1
+712150 close(4)                         = 0
+712150 close(3)                         = 0
+712150 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712150 newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0700, st_size=1138, ...}, 0) = 0
+712150 newfstatat(AT_FDCWD, "/home/hacker/.local/bin/id", 0x7ffcb76a3540, 0) = -1 ENOENT (No such file or directory)
+712150 newfstatat(AT_FDCWD, "/home/hacker/bin/id", 0x7ffcb76a3540, 0) = -1 ENOENT (No such file or directory)
+712150 newfstatat(AT_FDCWD, "/usr/local/sbin/id", 0x7ffcb76a3540, 0) = -1 ENOENT (No such file or directory)
+712150 newfstatat(AT_FDCWD, "/usr/local/bin/id", 0x7ffcb76a3540, 0) = -1 ENOENT (No such file or directory)
+712150 newfstatat(AT_FDCWD, "/usr/sbin/id", 0x7ffcb76a3540, 0) = -1 ENOENT (No such file or directory)
+712150 newfstatat(AT_FDCWD, "/usr/bin/id", {st_mode=S_IFREG|0755, st_size=45008, ...}, 0) = 0
+712150 newfstatat(AT_FDCWD, "/usr/bin/id", {st_mode=S_IFREG|0755, st_size=45008, ...}, 0) = 0
+712150 geteuid()                        = 1000
+712150 getegid()                        = 1000
+712150 getuid()                         = 1000
+712150 getgid()                         = 1000
+712150 access("/usr/bin/id", X_OK)      = 0
+712150 newfstatat(AT_FDCWD, "/usr/bin/id", {st_mode=S_IFREG|0755, st_size=45008, ...}, 0) = 0
+712150 geteuid()                        = 1000
+712150 getegid()                        = 1000
+712150 getuid()                         = 1000
+712150 getgid()                         = 1000
+712150 access("/usr/bin/id", R_OK)      = 0
+712150 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcee3c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712150 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712150 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712150 execve("/usr/bin/id", ["id", "-u"], 0x561821d4acd0 /* 54 vars */) = 0
+712150 brk(NULL)                        = 0x560889fd9000
+712150 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5131716000
+712150 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+712150 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+712150 fstat(3, {st_mode=S_IFREG|0644, st_size=94239, ...}) = 0
+712150 mmap(NULL, 94239, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f51316fe000
+712150 close(3)                         = 0
+712150 openat(AT_FDCWD, "/lib64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+712150 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+712150 fstat(3, {st_mode=S_IFREG|0755, st_size=196624, ...}) = 0
+712150 mmap(NULL, 198344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f51316cd000
+712150 mmap(0x7f51316ed000, 53248, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7f51316ed000
+712150 mmap(0x7f51316fa000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2d000) = 0x7f51316fa000
+712150 mmap(0x7f51316fc000, 5832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f51316fc000
+712150 close(3)                         = 0
+712150 openat(AT_FDCWD, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+712150 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2607\0\0\0\0\0\0"..., 832) = 832
+712150 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+712150 fstat(3, {st_mode=S_IFREG|0755, st_size=2448320, ...}) = 0
+712150 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+712150 mmap(NULL, 2038872, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f51314db000
+712150 mmap(0x7f513164a000, 479232, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16f000) = 0x7f513164a000
+712150 mmap(0x7f51316bf000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e3000) = 0x7f51316bf000
+712150 mmap(0x7f51316c5000, 31832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f51316c5000
+712150 close(3)                         = 0
+712150 openat(AT_FDCWD, "/lib64/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+712150 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+712150 fstat(3, {st_mode=S_IFREG|0755, st_size=702872, ...}) = 0
+712150 mmap(NULL, 696792, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5131430000
+712150 mmap(0x7f51314ad000, 180224, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7d000) = 0x7f51314ad000
+712150 mmap(0x7f51314d9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa9000) = 0x7f51314d9000
+712150 close(3)                         = 0
+712150 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f513142d000
+712150 arch_prctl(ARCH_SET_FS, 0x7f513142d840) = 0
+712150 set_tid_address(0x7f513142db10)  = 712150
+712150 set_robust_list(0x7f513142db20, 24) = 0
+712150 rseq(0x7f513142d6a0, 0x20, 0, 0x53053053) = 0
+712150 mprotect(0x7f51316bf000, 16384, PROT_READ) = 0
+712150 mprotect(0x7f51314d9000, 4096, PROT_READ) = 0
+712150 mprotect(0x7f51316fa000, 4096, PROT_READ) = 0
+712150 mprotect(0x560886bba000, 4096, PROT_READ) = 0
+712150 mprotect(0x7f5131752000, 8192, PROT_READ) = 0
+712150 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+712150 munmap(0x7f51316fe000, 94239)    = 0
+712150 statfs("/sys/fs/selinux", {f_type=SELINUX_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0x15, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NOEXEC|ST_RELATIME}) = 0
+712150 statfs("/sys/fs/selinux", {f_type=SELINUX_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0x15, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NOEXEC|ST_RELATIME}) = 0
+712150 getrandom("\x9b\xae\x95\x7e\xa9\x6f\x6e\xf8", 8, GRND_NONBLOCK) = 8
+712150 brk(NULL)                        = 0x560889fd9000
+712150 brk(0x560889ffa000)              = 0x560889ffa000
+712150 access("/etc/selinux/config", F_OK) = 0
+712150 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+712150 fstat(3, {st_mode=S_IFREG|0644, st_size=233242544, ...}) = 0
+712150 mmap(NULL, 233242544, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f5123400000
+712150 close(3)                         = 0
+712150 geteuid()                        = 1000
+712150 fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+712150 write(1, "1000\n", 5)            = 5
+712146 <... read resumed>"1000\n", 4096) = 5
+712150 close(1 <unfinished ...>
+712146 read(3,  <unfinished ...>
+712150 <... close resumed>)             = 0
+712146 <... read resumed>"", 4096)      = 0
+712150 close(2 <unfinished ...>
+712146 close(3 <unfinished ...>
+712150 <... close resumed>)             = 0
+712146 <... close resumed>)             = 0
+712146 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+712150 exit_group(0 <unfinished ...>
+712146 <... rt_sigprocmask resumed>NULL, 8) = 0
+712150 <... exit_group resumed>)        = ?
+712146 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+712146 rt_sigaction(SIGINT, {sa_handler=0x56181fcc79c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 wait4(-1,  <unfinished ...>
+712150 +++ exited with 0 +++
+712146 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 712150
+712146 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc79c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712146 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=712150, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+712146 wait4(-1, 0x7ffcb76a2b90, WNOHANG, NULL) = -1 ECHILD (No child processes)
+712146 rt_sigreturn({mask=[]})          = 0
+712146 read(255, "\n# Look for the Steam data files"..., 6968) = 1421
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 pipe2([3, 4], 0)                 = 0
+712146 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [], 8) = 0
+712146 lseek(255, -1372, SEEK_CUR)      = 5596
+712146 rt_sigprocmask(SIG_BLOCK, ~[], [INT TERM CHLD], 8) = 0
+712146 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f3740a9ea10) = 712151
+712151 set_robust_list(0x7f3740a9ea20, 24) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD],  <unfinished ...>
+712151 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD],  <unfinished ...>
+712146 <... rt_sigprocmask resumed>NULL, 8) = 0
+712151 <... rt_sigprocmask resumed>NULL, 8) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+712151 getpid( <unfinished ...>
+712146 <... rt_sigprocmask resumed>NULL, 8) = 0
+712151 <... getpid resumed>)            = 712151
+712146 rt_sigaction(SIGCHLD, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712151 close(255 <unfinished ...>
+712146 close(4 <unfinished ...>
+712151 <... close resumed>)             = 0
+712146 <... close resumed>)             = 0
+712151 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+712146 rt_sigprocmask(SIG_BLOCK, [INT],  <unfinished ...>
+712151 <... rt_sigprocmask resumed>NULL, 8) = 0
+712146 <... rt_sigprocmask resumed>[], 8) = 0
+712151 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0},  <unfinished ...>
+712146 read(3,  <unfinished ...>
+712151 <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712151 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712151 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712151 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712151 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712151 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712151 rt_sigaction(SIGCHLD, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712151 rt_sigaction(SIGINT, {sa_handler=0x56181fcee3c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712151 dup2(4, 1)                       = 1
+712151 close(4)                         = 0
+712151 close(3)                         = 0
+712151 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712151 newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0700, st_size=1138, ...}, 0) = 0
+712151 newfstatat(AT_FDCWD, "/home/hacker/.local/bin/readlink", 0x7ffcb76a26e0, 0) = -1 ENOENT (No such file or directory)
+712151 newfstatat(AT_FDCWD, "/home/hacker/bin/readlink", 0x7ffcb76a26e0, 0) = -1 ENOENT (No such file or directory)
+712151 newfstatat(AT_FDCWD, "/usr/local/sbin/readlink", 0x7ffcb76a26e0, 0) = -1 ENOENT (No such file or directory)
+712151 newfstatat(AT_FDCWD, "/usr/local/bin/readlink", 0x7ffcb76a26e0, 0) = -1 ENOENT (No such file or directory)
+712151 newfstatat(AT_FDCWD, "/usr/sbin/readlink", 0x7ffcb76a26e0, 0) = -1 ENOENT (No such file or directory)
+712151 newfstatat(AT_FDCWD, "/usr/bin/readlink", {st_mode=S_IFREG|0755, st_size=40936, ...}, 0) = 0
+712151 newfstatat(AT_FDCWD, "/usr/bin/readlink", {st_mode=S_IFREG|0755, st_size=40936, ...}, 0) = 0
+712151 geteuid()                        = 1000
+712151 getegid()                        = 1000
+712151 getuid()                         = 1000
+712151 getgid()                         = 1000
+712151 access("/usr/bin/readlink", X_OK) = 0
+712151 newfstatat(AT_FDCWD, "/usr/bin/readlink", {st_mode=S_IFREG|0755, st_size=40936, ...}, 0) = 0
+712151 geteuid()                        = 1000
+712151 getegid()                        = 1000
+712151 getuid()                         = 1000
+712151 getgid()                         = 1000
+712151 access("/usr/bin/readlink", R_OK) = 0
+712151 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712151 rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [], 8) = 0
+712151 rt_sigprocmask(SIG_BLOCK, ~[], [INT TERM CHLD], 8) = 0
+712151 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f3740a9ea10) = 712152
+712152 set_robust_list(0x7f3740a9ea20, 24) = 0
+712151 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD],  <unfinished ...>
+712152 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD],  <unfinished ...>
+712151 <... rt_sigprocmask resumed>NULL, 8) = 0
+712152 <... rt_sigprocmask resumed>NULL, 8) = 0
+712151 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+712152 getpid( <unfinished ...>
+712151 <... rt_sigprocmask resumed>NULL, 8) = 0
+712152 <... getpid resumed>)            = 712152
+712152 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712151 rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+712152 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0},  <unfinished ...>
+712151 <... rt_sigprocmask resumed>[], 8) = 0
+712152 <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712151 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+712152 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0},  <unfinished ...>
+712151 <... rt_sigprocmask resumed>NULL, 8) = 0
+712152 <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712151 rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+712152 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0},  <unfinished ...>
+712151 <... rt_sigprocmask resumed>[], 8) = 0
+712152 <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712151 rt_sigaction(SIGINT, {sa_handler=0x56181fcc79c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0},  <unfinished ...>
+712152 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0},  <unfinished ...>
+712151 <... rt_sigaction resumed>{sa_handler=0x56181fcee3c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712152 <... rt_sigaction resumed>{sa_handler=0x56181fcee3c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712151 wait4(-1,  <unfinished ...>
+712152 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712152 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712152 execve("/usr/bin/readlink", ["readlink", "-e", "-q", "/home/hacker/.steam/steam"], 0x561821d4acd0 /* 54 vars */) = 0
+712152 brk(NULL)                        = 0x55a114891000
+712152 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe77bee6000
+712152 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+712152 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+712152 fstat(3, {st_mode=S_IFREG|0644, st_size=94239, ...}) = 0
+712152 mmap(NULL, 94239, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe77bece000
+712152 close(3)                         = 0
+712152 openat(AT_FDCWD, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+712152 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2607\0\0\0\0\0\0"..., 832) = 832
+712152 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+712152 fstat(3, {st_mode=S_IFREG|0755, st_size=2448320, ...}) = 0
+712152 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+712152 mmap(NULL, 2038872, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe77bcdc000
+712152 mmap(0x7fe77be4b000, 479232, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16f000) = 0x7fe77be4b000
+712152 mmap(0x7fe77bec0000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e3000) = 0x7fe77bec0000
+712152 mmap(0x7fe77bec6000, 31832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe77bec6000
+712152 close(3)                         = 0
+712152 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe77bcd9000
+712152 arch_prctl(ARCH_SET_FS, 0x7fe77bcd9740) = 0
+712152 set_tid_address(0x7fe77bcd9a10)  = 712152
+712152 set_robust_list(0x7fe77bcd9a20, 24) = 0
+712152 rseq(0x7fe77bcd9680, 0x20, 0, 0x53053053) = 0
+712152 mprotect(0x7fe77bec0000, 16384, PROT_READ) = 0
+712152 mprotect(0x55a1022f3000, 4096, PROT_READ) = 0
+712152 mprotect(0x7fe77bf22000, 8192, PROT_READ) = 0
+712152 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+712152 munmap(0x7fe77bece000, 94239)    = 0
+712152 getrandom("\x36\x97\xe6\xb9\xda\x4e\x6e\xad", 8, GRND_NONBLOCK) = 8
+712152 brk(NULL)                        = 0x55a114891000
+712152 brk(0x55a1148b2000)              = 0x55a1148b2000
+712152 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+712152 fstat(3, {st_mode=S_IFREG|0644, st_size=233242544, ...}) = 0
+712152 mmap(NULL, 233242544, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe76de00000
+712152 close(3)                         = 0
+712152 readlink("/home", 0x7ffc43291bd0, 1023) = -1 EINVAL (Invalid argument)
+712152 readlink("/home/hacker", 0x7ffc43291bd0, 1023) = -1 EINVAL (Invalid argument)
+712152 readlink("/home/hacker/.steam", 0x7ffc43291bd0, 1023) = -1 EINVAL (Invalid argument)
+712152 readlink("/home/hacker/.steam/steam", "/home/hacker/.local/share/Steam", 1023) = 31
+712152 readlink("/home", 0x7ffc43291bd0, 1023) = -1 EINVAL (Invalid argument)
+712152 readlink("/home/hacker", 0x7ffc43291bd0, 1023) = -1 EINVAL (Invalid argument)
+712152 readlink("/home/hacker/.local", 0x7ffc43291bd0, 1023) = -1 EINVAL (Invalid argument)
+712152 readlink("/home/hacker/.local/share", 0x7ffc43291bd0, 1023) = -1 EINVAL (Invalid argument)
+712152 readlink("/home/hacker/.local/share/Steam", 0x7ffc43291bd0, 1023) = -1 EINVAL (Invalid argument)
+712152 fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+712152 write(1, "/home/hacker/.local/share/Steam\n", 32) = 32
+712146 <... read resumed>"/home/hacker/.local/share/Steam\n", 4096) = 32
+712152 close(1 <unfinished ...>
+712146 read(3,  <unfinished ...>
+712152 <... close resumed>)             = 0
+712152 close(2)                         = 0
+712152 exit_group(0)                    = ?
+712152 +++ exited with 0 +++
+712151 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 712152
+712151 rt_sigaction(SIGINT, {sa_handler=0x56181fcee3c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc79c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712151 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712151 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=712152, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+712151 wait4(-1, 0x7ffcb76a1b10, WNOHANG, NULL) = -1 ECHILD (No child processes)
+712151 rt_sigreturn({mask=[]})          = 0
+712151 exit_group(0)                    = ?
+712146 <... read resumed>"", 4096)      = 0
+712151 +++ exited with 0 +++
+712146 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=712151, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+712146 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 712151
+712146 wait4(-1, 0x7ffcb76a1050, WNOHANG, NULL) = -1 ECHILD (No child processes)
+712146 rt_sigreturn({mask=[INT]})       = 0
+712146 close(3)                         = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+712146 rt_sigaction(SIGINT, {sa_handler=0x56181fcc79c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc79c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 pipe2([3, 4], 0)                 = 0
+712146 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [], 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, ~[], [INT TERM CHLD], 8) = 0
+712146 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f3740a9ea10) = 712153
+712153 set_robust_list(0x7f3740a9ea20, 24 <unfinished ...>
+712146 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD],  <unfinished ...>
+712153 <... set_robust_list resumed>)   = 0
+712146 <... rt_sigprocmask resumed>NULL, 8) = 0
+712153 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD],  <unfinished ...>
+712146 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+712153 <... rt_sigprocmask resumed>NULL, 8) = 0
+712146 <... rt_sigprocmask resumed>NULL, 8) = 0
+712146 rt_sigaction(SIGCHLD, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0},  <unfinished ...>
+712153 getpid( <unfinished ...>
+712146 <... rt_sigaction resumed>{sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712153 <... getpid resumed>)            = 712153
+712146 close(4)                         = 0
+712153 close(255 <unfinished ...>
+712146 rt_sigprocmask(SIG_BLOCK, [INT],  <unfinished ...>
+712153 <... close resumed>)             = 0
+712146 <... rt_sigprocmask resumed>[], 8) = 0
+712153 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+712146 read(3,  <unfinished ...>
+712153 <... rt_sigprocmask resumed>NULL, 8) = 0
+712153 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712153 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712153 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712153 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712153 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712153 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712153 rt_sigaction(SIGCHLD, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712153 rt_sigaction(SIGINT, {sa_handler=0x56181fcee3c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712153 dup2(4, 1)                       = 1
+712153 close(4)                         = 0
+712153 close(3)                         = 0
+712153 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712153 fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+712153 write(1, "ubuntu12_32\n", 12)    = 12
+712146 <... read resumed>"ubuntu12_32\n", 4096) = 12
+712146 read(3,  <unfinished ...>
+712153 exit_group(0)                    = ?
+712146 <... read resumed>"", 4096)      = 0
+712153 +++ exited with 0 +++
+712146 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=712153, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+712146 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 712153
+712146 wait4(-1, 0x7ffcb76a1190, WNOHANG, NULL) = -1 ECHILD (No child processes)
+712146 rt_sigreturn({mask=[INT]})       = 0
+712146 close(3)                         = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+712146 rt_sigaction(SIGINT, {sa_handler=0x56181fcc79c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc79c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712146 newfstatat(AT_FDCWD, "/usr/lib/steam/bootstraplinux_ubuntu12_32.tar.xz", {st_mode=S_IFREG|0644, st_size=19365560, ...}, 0) = 0
+712146 newfstatat(AT_FDCWD, "/home/hacker/.steam", {st_mode=S_IFDIR|0755, st_size=222, ...}, 0) = 0
+712146 read(255, "\n# If Steam is already running, "..., 6968) = 1372
+712146 newfstatat(AT_FDCWD, "/home/hacker/.steam/steam.pipe", {st_mode=S_IFIFO|0600, st_size=0, ...}, 0) = 0
+712146 faccessat2(AT_FDCWD, "/home/hacker/.steam/root/ubuntu12_32/steam-runtime/amd64/usr/bin/steam-runtime-steam-remote", X_OK, AT_EACCESS) = 0
+712146 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [], 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, [CHLD], [INT TERM CHLD], 8) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD], NULL, 8) = 0
+712146 lseek(255, -1210, SEEK_CUR)      = 5758
+712146 rt_sigprocmask(SIG_BLOCK, ~[], [INT TERM CHLD], 8) = 0
+712146 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f3740a9ea10) = 712154
+712154 set_robust_list(0x7f3740a9ea20, 24 <unfinished ...>
+712146 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD],  <unfinished ...>
+712154 <... set_robust_list resumed>)   = 0
+712146 <... rt_sigprocmask resumed>NULL, 8) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+712154 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD],  <unfinished ...>
+712146 <... rt_sigprocmask resumed>NULL, 8) = 0
+712154 <... rt_sigprocmask resumed>NULL, 8) = 0
+712146 rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+712154 getpid( <unfinished ...>
+712146 <... rt_sigprocmask resumed>[], 8) = 0
+712154 <... getpid resumed>)            = 712154
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712154 close(255 <unfinished ...>
+712146 rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+712154 <... close resumed>)             = 0
+712146 <... rt_sigprocmask resumed>[], 8) = 0
+712154 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+712146 rt_sigaction(SIGINT, {sa_handler=0x56181fcc79c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0},  <unfinished ...>
+712154 <... rt_sigprocmask resumed>NULL, 8) = 0
+712146 <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712154 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0},  <unfinished ...>
+712146 wait4(-1,  <unfinished ...>
+712154 <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712154 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712154 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712154 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712154 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712154 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc4580, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f3740ababf0}, 8) = 0
+712154 openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+712154 dup2(3, 2)                       = 2
+712154 close(3)                         = 0
+712154 execve("/home/hacker/.steam/root/ubuntu12_32/steam-runtime/amd64/usr/bin/steam-runtime-steam-remote", ["/home/hacker/.steam/root/ubuntu1"...], 0x561821d4acd0 /* 54 vars */) = 0
+712154 brk(NULL)                        = 0x1f048000
+712154 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdcacad3000
+712154 readlinkat(AT_FDCWD, "/proc/self/exe", "/home/hacker/.local/share/Steam/"..., 4096) = 98
+712154 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+712154 openat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/glibc-hwcaps/x86-64-v3/libglib-2.0.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+712154 newfstatat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/glibc-hwcaps/x86-64-v3/", 0x7ffdddc9b8f0, 0) = -1 ENOENT (No such file or directory)
+712154 openat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/glibc-hwcaps/x86-64-v2/libglib-2.0.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+712154 newfstatat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/glibc-hwcaps/x86-64-v2/", 0x7ffdddc9b8f0, 0) = -1 ENOENT (No such file or directory)
+712154 openat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/libglib-2.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+712154 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \276\1\0\0\0\0\0"..., 832) = 832
+712154 fstat(3, {st_mode=S_IFREG|0644, st_size=1332376, ...}) = 0
+712154 mmap(NULL, 5527784, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0x7fdcac58d000
+712154 mmap(0x7fdcac600000, 3430632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0x7fdcac600000
+712154 munmap(0x7fdcac58d000, 471040)   = 0
+712154 munmap(0x7fdcac946000, 1624296)  = 0
+712154 mprotect(0x7fdcac744000, 2093056, PROT_NONE) = 0
+712154 mmap(0x7fdcac943000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x143000) = 0x7fdcac943000
+712154 mmap(0x7fdcac945000, 2280, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdcac945000
+712154 close(3)                         = 0
+712154 openat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/libgobject-2.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+712154 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360\265\0\0\0\0\0\0"..., 832) = 832
+712154 fstat(3, {st_mode=S_IFREG|0644, st_size=334928, ...}) = 0
+712154 mmap(NULL, 4529960, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0x7fdcac1ae000
+712154 mmap(0x7fdcac200000, 2432808, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0x7fdcac200000
+712154 munmap(0x7fdcac1ae000, 335872)   = 0
+712154 munmap(0x7fdcac452000, 1761064)  = 0
+712154 mprotect(0x7fdcac250000, 2097152, PROT_NONE) = 0
+712154 mmap(0x7fdcac450000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x50000) = 0x7fdcac450000
+712154 close(3)                         = 0
+712154 openat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/libgio-2.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+712154 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\236\3\0\0\0\0\0"..., 832) = 832
+712154 fstat(3, {st_mode=S_IFREG|0644, st_size=1792288, ...}) = 0
+712154 mmap(NULL, 5992440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0x7fdcabc49000
+712154 mmap(0x7fdcabe00000, 3895288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0x7fdcabe00000
+712154 munmap(0x7fdcabc49000, 1798144)  = 0
+712154 munmap(0x7fdcac1b7000, 299000)   = 0
+712154 mprotect(0x7fdcabfad000, 2097152, PROT_NONE) = 0
+712154 mmap(0x7fdcac1ad000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ad000) = 0x7fdcac1ad000
+712154 mmap(0x7fdcac1b6000, 4088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdcac1b6000
+712154 close(3)                         = 0
+712154 openat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+712154 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+712154 fstat(3, {st_mode=S_IFREG|0644, st_size=94239, ...}) = 0
+712154 mmap(NULL, 94239, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fdcacabb000
+712154 close(3)                         = 0
+712154 openat(AT_FDCWD, "/lib64/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+712154 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+712154 fstat(3, {st_mode=S_IFREG|0755, st_size=11384, ...}) = 0
+712154 mmap(NULL, 12296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdcacab7000
+712154 mmap(0x7fdcacab8000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fdcacab8000
+712154 mmap(0x7fdcacab9000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fdcacab9000
+712154 mmap(0x7fdcacaba000, 8, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdcacaba000
+712154 close(3)                         = 0
+712154 openat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+712154 openat(AT_FDCWD, "/lib64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+712154 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+712154 fstat(3, {st_mode=S_IFREG|0755, st_size=11400, ...}) = 0
+712154 mmap(NULL, 12296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdcacab3000
+712154 mmap(0x7fdcacab4000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fdcacab4000
+712154 mmap(0x7fdcacab5000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fdcacab5000
+712154 mmap(0x7fdcacab6000, 8, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdcacab6000
+712154 close(3)                         = 0
+712154 openat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+712154 openat(AT_FDCWD, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+712154 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2607\0\0\0\0\0\0"..., 832) = 832
+712154 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+712154 fstat(3, {st_mode=S_IFREG|0755, st_size=2448320, ...}) = 0
+712154 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdcacab1000
+712154 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+712154 mmap(NULL, 2038872, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdcabc0e000
+712154 mmap(0x7fdcabd7d000, 479232, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16f000) = 0x7fdcabd7d000
+712154 mmap(0x7fdcabdf2000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e3000) = 0x7fdcabdf2000
+712154 mmap(0x7fdcabdf8000, 31832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdcabdf8000
+712154 close(3)                         = 0
+712154 openat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+712154 openat(AT_FDCWD, "/lib64/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+712154 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+712154 fstat(3, {st_mode=S_IFREG|0755, st_size=11536, ...}) = 0
+712154 mmap(NULL, 12296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdcacaad000
+712154 mmap(0x7fdcacaae000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fdcacaae000
+712154 mmap(0x7fdcacaaf000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fdcacaaf000
+712154 mmap(0x7fdcacab0000, 8, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdcacab0000
+712154 close(3)                         = 0
+712154 openat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/libffi.so.6", O_RDONLY|O_CLOEXEC) = 3
+712154 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\27\0\0\0\0\0\0"..., 832) = 832
+712154 fstat(3, {st_mode=S_IFREG|0644, st_size=31000, ...}) = 0
+712154 mmap(NULL, 4224512, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0x7fdcab806000
+712154 mmap(0x7fdcaba00000, 2127360, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0x7fdcaba00000
+712154 munmap(0x7fdcab806000, 2072576)  = 0
+712154 munmap(0x7fdcabc08000, 22016)    = 0
+712154 mprotect(0x7fdcaba07000, 2093056, PROT_NONE) = 0
+712154 mmap(0x7fdcabc06000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fdcabc06000
+712154 close(3)                         = 0
+712154 openat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/libgmodule-2.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+712154 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\20\0\0\0\0\0\0"..., 832) = 832
+712154 fstat(3, {st_mode=S_IFREG|0644, st_size=14528, ...}) = 0
+712154 mmap(NULL, 4206968, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0x7fdcab5fc000
+712154 mmap(0x7fdcab600000, 2109816, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0x7fdcab600000
+712154 munmap(0x7fdcab5fc000, 16384)    = 0
+712154 munmap(0x7fdcab804000, 2077048)  = 0
+712154 mprotect(0x7fdcab603000, 2093056, PROT_NONE) = 0
+712154 mmap(0x7fdcab802000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fdcab802000
+712154 close(3)                         = 0
+712154 openat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+712154 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p \0\0\0\0\0\0"..., 832) = 832
+712154 fstat(3, {st_mode=S_IFREG|0644, st_size=92720, ...}) = 0
+712154 mmap(NULL, 4284976, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0x7fdcab1e9000
+712154 mmap(0x7fdcab200000, 2187824, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0x7fdcab200000
+712154 munmap(0x7fdcab1e9000, 94208)    = 0
+712154 munmap(0x7fdcab417000, 1999408)  = 0
+712154 mprotect(0x7fdcab216000, 2093056, PROT_NONE) = 0
+712154 mmap(0x7fdcab415000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7fdcab415000
+712154 close(3)                         = 0
+712154 openat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/libresolv.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+712154 openat(AT_FDCWD, "/lib64/libresolv.so.2", O_RDONLY|O_CLOEXEC) = 3
+712154 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+712154 fstat(3, {st_mode=S_IFREG|0755, st_size=61896, ...}) = 0
+712154 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdcacaab000
+712154 mmap(NULL, 71816, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdcaca99000
+712154 mmap(0x7fdcacaa2000, 20480, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7fdcacaa2000
+712154 mmap(0x7fdcacaa7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x7fdcacaa7000
+712154 mmap(0x7fdcacaa9000, 6280, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdcacaa9000
+712154 close(3)                         = 0
+712154 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdcaca96000
+712154 arch_prctl(ARCH_SET_FS, 0x7fdcaca96740) = 0
+712154 set_tid_address(0x7fdcaca96a10)  = 712154
+712154 set_robust_list(0x7fdcaca96a20, 24) = 0
+712154 rseq(0x7fdcaca96680, 0x20, 0, 0x53053053) = 0
+712154 mprotect(0x7fdcabdf2000, 16384, PROT_READ) = 0
+712154 mprotect(0x7fdcacaa7000, 4096, PROT_READ) = 0
+712154 mprotect(0x7fdcab415000, 4096, PROT_READ) = 0
+712154 mprotect(0x7fdcacaaf000, 4096, PROT_READ) = 0
+712154 mprotect(0x7fdcacab5000, 4096, PROT_READ) = 0
+712154 mprotect(0x7fdcac943000, 4096, PROT_READ) = 0
+712154 mprotect(0x7fdcacab9000, 4096, PROT_READ) = 0
+712154 mprotect(0x7fdcab802000, 4096, PROT_READ) = 0
+712154 mprotect(0x7fdcabc06000, 4096, PROT_READ) = 0
+712154 mprotect(0x7fdcac450000, 4096, PROT_READ) = 0
+712154 mprotect(0x7fdcac1ad000, 24576, PROT_READ) = 0
+712154 mprotect(0x612000, 4096, PROT_READ) = 0
+712154 mprotect(0x7fdcacb0f000, 8192, PROT_READ) = 0
+712154 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+712154 munmap(0x7fdcacabb000, 94239)    = 0
+712154 getrandom("\x87\x7a\xa8\x57\x6a\x2c\x22\x49", 8, GRND_NONBLOCK) = 8
+712154 brk(NULL)                        = 0x1f048000
+712154 brk(0x1f069000)                  = 0x1f069000
+712154 openat(AT_FDCWD, "/proc/self/auxv", O_RDONLY) = 3
+712154 fstat(3, {st_mode=S_IFREG|0400, st_size=0, ...}) = 0
+712154 read(3, "!\0\0\0\0\0\0\0\0\220\255\254\334\177\0\0003\0\0\0\0\0\0\0000\16\0\0\0\0\0\0"..., 1024) = 368
+712154 close(3)                         = 0
+712154 getpid()                         = 712154
+712154 fcntl(0, F_GETFD)                = 0
+712154 fcntl(1, F_GETFD)                = 0
+712154 getpeername(1, 0x7ffdddc9c520, [128]) = -1 ENOTSOCK (Socket operation on non-socket)
+712154 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x5), ...}) = 0
+712154 fcntl(2, F_GETFD)                = 0
+712154 getpeername(2, 0x7ffdddc9c520, [128]) = -1 ENOTSOCK (Socket operation on non-socket)
+712154 fstat(2, {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}) = 0
+712154 openat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/libsystemd.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+712154 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+712154 fstat(3, {st_mode=S_IFREG|0644, st_size=94239, ...}) = 0
+712154 mmap(NULL, 94239, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fdcacabb000
+712154 close(3)                         = 0
+712154 openat(AT_FDCWD, "/lib64/libsystemd.so.0", O_RDONLY|O_CLOEXEC) = 3
+712154 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+712154 fstat(3, {st_mode=S_IFREG|0755, st_size=1196256, ...}) = 0
+712154 mmap(NULL, 1177536, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdcac976000
+712154 mmap(0x7fdcaca35000, 335872, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xbf000) = 0x7fdcaca35000
+712154 mmap(0x7fdcaca87000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x110000) = 0x7fdcaca87000
+712154 mmap(0x7fdcaca95000, 1984, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdcaca95000
+712154 close(3)                         = 0
+712154 openat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/libcap.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+712154 openat(AT_FDCWD, "/lib64/libcap.so.2", O_RDONLY|O_CLOEXEC) = 3
+712154 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20V\0\0\0\0\0\0"..., 832) = 832
+712154 fstat(3, {st_mode=S_IFREG|0755, st_size=44992, ...}) = 0
+712154 mmap(NULL, 45128, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdcac96a000
+712154 mmap(0x7fdcac970000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fdcac970000
+712154 mmap(0x7fdcac974000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7fdcac974000
+712154 close(3)                         = 0
+712154 openat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+712154 openat(AT_FDCWD, "/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+712154 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+712154 fstat(3, {st_mode=S_IFREG|0755, st_size=984280, ...}) = 0
+712154 mmap(NULL, 970768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdcac512000
+712154 mmap(0x7fdcac58e000, 458752, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7c000) = 0x7fdcac58e000
+712154 mmap(0x7fdcac5fe000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xeb000) = 0x7fdcac5fe000
+712154 close(3)                         = 0
+712154 openat(AT_FDCWD, "/home/hacker/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/bin/../lib/x86_64-linux-gnu/steam-runtime-tools-0/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+712154 openat(AT_FDCWD, "/lib64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+712154 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+712154 fstat(3, {st_mode=S_IFREG|0755, st_size=182352, ...}) = 0
+712154 mmap(NULL, 176584, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdcac4e6000
+712154 mmap(0x7fdcac509000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23000) = 0x7fdcac509000
+712154 mmap(0x7fdcac510000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2a000) = 0x7fdcac510000
+712154 mmap(0x7fdcac511000, 456, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdcac511000
+712154 close(3)                         = 0
+712154 mprotect(0x7fdcac510000, 4096, PROT_READ) = 0
+712154 mprotect(0x7fdcac5fe000, 4096, PROT_READ) = 0
+712154 mprotect(0x7fdcac974000, 4096, PROT_READ) = 0
+712154 mprotect(0x7fdcaca87000, 53248, PROT_READ) = 0
+712154 prctl(PR_CAPBSET_READ, CAP_MAC_OVERRIDE) = 1
+712154 prctl(PR_CAPBSET_READ, 0x30 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+712154 prctl(PR_CAPBSET_READ, CAP_CHECKPOINT_RESTORE) = 1
+712154 prctl(PR_CAPBSET_READ, 0x2c /* CAP_??? */) = -1 EINVAL (Invalid argument)
+712154 prctl(PR_CAPBSET_READ, 0x2a /* CAP_??? */) = -1 EINVAL (Invalid argument)
+712154 prctl(PR_CAPBSET_READ, 0x29 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+712154 munmap(0x7fdcacabb000, 94239)    = 0
+712154 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0) = 3
+712154 connect(3, {sa_family=AF_UNIX, sun_path="/run/systemd/journal/stdout"}, 30) = 0
+712154 shutdown(3, SHUT_RD)             = 0
+712154 getsockopt(3, SOL_SOCKET, SO_SNDBUF, [212992], [4]) = 0
+712154 setsockopt(3, SOL_SOCKET, SO_SNDBUF, [8388608], 4) = 0
+712154 getsockopt(3, SOL_SOCKET, SO_SNDBUF, [425984], [4]) = 0
+712154 setsockopt(3, SOL_SOCKET, SO_SNDBUFFORCE, [8388608], 4) = -1 EPERM (Operation not permitted)
+712154 write(3, "steam-runtime-steam-remote\n\n5\n0\n"..., 38) = 38
+712154 dup2(3, 2)                       = 2
+712154 close(3)                         = 0
+712154 ioctl(2, TCGETS, 0x7ffdddc9c5f0) = -1 ENOTTY (Inappropriate ioctl for device)
+712154 rt_sigprocmask(SIG_UNBLOCK, ~[RTMIN RT_1], [], 8) = 0
+712154 rt_sigaction(SIGHUP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGILL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGTRAP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+712154 rt_sigaction(SIGABRT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712154 rt_sigaction(SIGBUS, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGFPE, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGUSR1, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGSEGV, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGUSR2, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGALRM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGSTKFLT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGCONT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGURG, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGXCPU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGXFSZ, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGVTALRM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGPROF, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGWINCH, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGIO, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGPWR, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGSYS, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_2, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_3, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_4, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_5, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_6, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_7, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_8, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_9, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_10, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_11, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_12, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_13, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_14, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_15, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_16, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_17, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_18, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_19, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_20, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_21, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_22, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_23, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_24, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_25, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_26, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_27, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_28, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_29, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_30, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_31, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 rt_sigaction(SIGRT_32, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fdcabc27bf0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+712154 openat(AT_FDCWD, "/home/hacker/.steam/steam.pipe", O_WRONLY|O_NOCTTY|O_NONBLOCK|O_CLOEXEC) = 3
+712154 fcntl(3, F_GETFL)                = 0x8801 (flags O_WRONLY|O_NONBLOCK|O_LARGEFILE)
+712154 fcntl(3, F_SETFL, O_WRONLY|O_LARGEFILE) = 0
+712154 write(3, "'~/.steam/root/ubuntu12_32/steam"..., 48) = 48
+712154 close(3)                         = 0
+712154 exit_group(0)                    = ?
+712154 +++ exited with 0 +++
+712146 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 712154
+712146 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, {sa_handler=0x56181fcc79c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f3740ababf0}, 8) = 0
+712146 ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712146 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=712154, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+712146 wait4(-1, 0x7ffcb76a2a50, WNOHANG, NULL) = -1 ECHILD (No child processes)
+712146 rt_sigreturn({mask=[]})          = 0
+712146 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+712146 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+712146 exit_group(0)                    = ?
+712146 +++ exited with 0 +++

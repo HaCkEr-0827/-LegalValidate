@@ -1,0 +1,1335 @@
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Bad Request: /otp/request/
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/views.py", line 129, in get
+    schema = generator.get_schema(request, self.public)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/generators.py", line 337, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/generators.py", line 561, in get_paths
+    operation = self.get_operation(
+        view, path, prefix, method, components, request
+    )
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/generators.py", line 609, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/view.py", line 47, in get_operation
+    parameters = self.add_manual_parameters(parameters)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/view.py", line 193, in add_manual_parameters
+    raise SwaggerGenerationError(
+        "specify the body parameter as a Schema or Serializer in request_body"
+    )
+drf_yasg.errors.SwaggerGenerationError: specify the body parameter as a Schema or Serializer in request_body
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/views.py", line 129, in get
+    schema = generator.get_schema(request, self.public)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/generators.py", line 337, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/generators.py", line 561, in get_paths
+    operation = self.get_operation(
+        view, path, prefix, method, components, request
+    )
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/generators.py", line 609, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/view.py", line 47, in get_operation
+    parameters = self.add_manual_parameters(parameters)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/view.py", line 193, in add_manual_parameters
+    raise SwaggerGenerationError(
+        "specify the body parameter as a Schema or Serializer in request_body"
+    )
+drf_yasg.errors.SwaggerGenerationError: specify the body parameter as a Schema or Serializer in request_body
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/views.py", line 129, in get
+    schema = generator.get_schema(request, self.public)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/generators.py", line 337, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/generators.py", line 561, in get_paths
+    operation = self.get_operation(
+        view, path, prefix, method, components, request
+    )
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/generators.py", line 609, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/view.py", line 47, in get_operation
+    parameters = self.add_manual_parameters(parameters)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/view.py", line 193, in add_manual_parameters
+    raise SwaggerGenerationError(
+        "specify the body parameter as a Schema or Serializer in request_body"
+    )
+drf_yasg.errors.SwaggerGenerationError: specify the body parameter as a Schema or Serializer in request_body
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /otp/verify/
+Bad Request: /otp/verify/
+Bad Request: /otp/verify/
+Watching for file changes with StatReloader
+view's UserSubscriptionDetailView.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/__init__.py", line 2128, in get_prep_value
+    return int(value)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/auth/models.py", line 549, in __int__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/home/hacker/becend/legalvalidate_backend/subscriptions/views.py", line 23, in get_queryset
+    return Subscription.objects.filter(user=self.request.user)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+        "Field '%s' expected a number but got %r." % (self.name, value),
+    ) from e
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7fa58dc947d0>.
+view's UserSubscriptionDetailView.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/__init__.py", line 2128, in get_prep_value
+    return int(value)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/auth/models.py", line 549, in __int__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/home/hacker/becend/legalvalidate_backend/subscriptions/views.py", line 23, in get_queryset
+    return Subscription.objects.filter(user=self.request.user)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+        "Field '%s' expected a number but got %r." % (self.name, value),
+    ) from e
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7fa58dc947d0>.
+view's UserSubscriptionDetailView.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/__init__.py", line 2128, in get_prep_value
+    return int(value)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/auth/models.py", line 549, in __int__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/home/hacker/becend/legalvalidate_backend/subscriptions/views.py", line 23, in get_queryset
+    return Subscription.objects.filter(user=self.request.user)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+        "Field '%s' expected a number but got %r." % (self.name, value),
+    ) from e
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7fa58dc947d0>.
+view's UserSubscriptionDetailView.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/__init__.py", line 2128, in get_prep_value
+    return int(value)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/auth/models.py", line 549, in __int__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/home/hacker/becend/legalvalidate_backend/subscriptions/views.py", line 23, in get_queryset
+    return Subscription.objects.filter(user=self.request.user)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+        "Field '%s' expected a number but got %r." % (self.name, value),
+    ) from e
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7fa58dc947d0>.
+Watching for file changes with StatReloader
+view's UserSubscriptionDetailView.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/__init__.py", line 2128, in get_prep_value
+    return int(value)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/auth/models.py", line 549, in __int__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/home/hacker/becend/legalvalidate_backend/subscriptions/views.py", line 23, in get_queryset
+    return Subscription.objects.filter(user=self.request.user)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+        "Field '%s' expected a number but got %r." % (self.name, value),
+    ) from e
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f97609d4910>.
+view's UserSubscriptionDetailView.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/__init__.py", line 2128, in get_prep_value
+    return int(value)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/auth/models.py", line 549, in __int__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/home/hacker/becend/legalvalidate_backend/subscriptions/views.py", line 23, in get_queryset
+    return Subscription.objects.filter(user=self.request.user)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+        "Field '%s' expected a number but got %r." % (self.name, value),
+    ) from e
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f97609d4910>.
+view's UserSubscriptionDetailView.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/__init__.py", line 2128, in get_prep_value
+    return int(value)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/auth/models.py", line 549, in __int__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/home/hacker/becend/legalvalidate_backend/subscriptions/views.py", line 23, in get_queryset
+    return Subscription.objects.filter(user=self.request.user)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+        "Field '%s' expected a number but got %r." % (self.name, value),
+    ) from e
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f97609d4910>.
+view's UserSubscriptionDetailView.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/__init__.py", line 2128, in get_prep_value
+    return int(value)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/auth/models.py", line 549, in __int__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/home/hacker/becend/legalvalidate_backend/subscriptions/views.py", line 23, in get_queryset
+    return Subscription.objects.filter(user=self.request.user)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+        "Field '%s' expected a number but got %r." % (self.name, value),
+    ) from e
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f97609d4910>.
+/home/hacker/becend/legalvalidate_backend/subscriptions/views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /request-otp/
+Not Found: /
+Bad Request: /subscriptions/
+Not Found: /subscriptions/5/
+Bad Request: /subscriptions/1/
+/home/hacker/becend/legalvalidate_backend/contracts/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+view's ContractAnalysisDetailView.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/__init__.py", line 2128, in get_prep_value
+    return int(value)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/auth/models.py", line 549, in __int__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/home/hacker/becend/legalvalidate_backend/contracts/views.py", line 123, in get_queryset
+    return ContractAnalysis.objects.filter(user=self.request.user)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/db/models/fields/__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+        "Field '%s' expected a number but got %r." % (self.name, value),
+    ) from e
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f75c724f250>.
+Not Found: /contracts/2/
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /contracts/upload/
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /contracts/8/
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/contracts/views.py", line 134, in get_contract_result
+    if contract.analysis_result:
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContractAnalysis' object has no attribute 'analysis_result'
+/home/hacker/becend/legalvalidate_backend/contracts/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /contracts/8/
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/contracts/views.py", line 150, in get_contract_result
+    "status": contract.status,
+              ^^^^^^^^^^^^^^^
+AttributeError: 'ContractAnalysis' object has no attribute 'status'
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Not Found: /
+Forbidden: /list/
+Forbidden: /list/
+/home/hacker/becend/legalvalidate_backend/users/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/users/views.py", line 39, in get
+    return Response(serializer.data, status=status.HTTP_200_OK)
+                    ^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 1056, in get_fields
+    assert hasattr(self, 'Meta'), (
+           ~~~~~~~^^^^^^^^^^^^^^
+AssertionError: Class UserSerializer missing "Meta" attribute
+Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/views.py", line 129, in get
+    schema = generator.get_schema(request, self.public)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/generators.py", line 337, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/generators.py", line 561, in get_paths
+    operation = self.get_operation(
+        view, path, prefix, method, components, request
+    )
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/generators.py", line 609, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/view.py", line 58, in get_operation
+    responses = self.get_responses()
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/view.py", line 226, in get_responses
+    responses=self.get_response_schemas(response_serializers)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/view.py", line 326, in get_response_schemas
+    schema=self.serializer_to_schema(serializer),
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/base.py", line 551, in serializer_to_schema
+    return self.probe_inspectors(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        self.field_inspectors,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        {"field_inspectors": self.field_inspectors},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/base.py", line 137, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/field.py", line 55, in get_schema
+    return self.probe_field_inspectors(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        serializer, openapi.Schema, self.use_definitions
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/base.py", line 277, in probe_field_inspectors
+    return self.probe_inspectors(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        self.field_inspectors,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/base.py", line 137, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/field.py", line 108, in field_to_swagger_object
+    child_schema = self.probe_field_inspectors(
+        field.child, ChildSwaggerType, use_references
+    )
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/base.py", line 277, in probe_field_inspectors
+    return self.probe_inspectors(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        self.field_inspectors,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/base.py", line 137, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/field.py", line 154, in field_to_swagger_object
+    actual_schema = definitions.setdefault(ref_name, make_schema_definition)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/openapi.py", line 822, in setdefault
+    ret = maker()
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/drf_yasg/inspectors/field.py", line 125, in make_schema_definition
+    for property_name, child in serializer.fields.items():
+                                ^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 1056, in get_fields
+    assert hasattr(self, 'Meta'), (
+           ~~~~~~~^^^^^^^^^^^^^^
+AssertionError: Class UserSerializer missing "Meta" attribute
+/home/hacker/becend/legalvalidate_backend/users/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /admin/users/user/
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/admin/options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/admin/sites.py", line 234, in inner
+    if not self.has_permission(request):
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/admin/sites.py", line 207, in has_permission
+    return request.user.is_active and request.user.is_staff
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'User' object has no attribute 'is_staff'
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/admin/sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/admin/sites.py", line 234, in inner
+    if not self.has_permission(request):
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/admin/sites.py", line 207, in has_permission
+    return request.user.is_active and request.user.is_staff
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'User' object has no attribute 'is_staff'
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/admin/sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/admin/sites.py", line 234, in inner
+    if not self.has_permission(request):
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/admin/sites.py", line 207, in has_permission
+    return request.user.is_active and request.user.is_staff
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'User' object has no attribute 'is_staff'
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/admin/sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/admin/sites.py", line 234, in inner
+    if not self.has_permission(request):
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/contrib/admin/sites.py", line 207, in has_permission
+    return request.user.is_active and request.user.is_staff
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hacker/becend/legalvalidate_backend/venv/lib64/python3.13/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'User' object has no attribute 'is_staff'
+/home/hacker/becend/legalvalidate_backend/users/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /admin/subscriptions/
+/home/hacker/becend/legalvalidate_backend/subscriptions/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/subscriptions/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/tasks.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/users/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /my_subscriptions/
+/home/hacker/becend/legalvalidate_backend/contracts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /contracts/
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hacker/becend/legalvalidate_backend/contracts/views.py changed, reloading.
+Watching for file changes with StatReloader
