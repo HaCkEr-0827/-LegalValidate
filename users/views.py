@@ -1,17 +1,14 @@
 import os
-import docx
+import docx # type: ignore
 import random
 import requests
-from PyPDF2 import PdfReader
-from django.utils import timezone
-from rest_framework import serializers, status, permissions, parsers
-from rest_framework.views import APIView
+from PyPDF2 import PdfReader # type: ignore
+from rest_framework import serializers, status, permissions, parsers, generics
 from rest_framework.response import Response
-from rest_framework.generics import ListAPIView
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.tokens import RefreshToken
-from drf_yasg.utils import swagger_auto_schema
-from drf_yasg import openapi
+from drf_yasg.utils import swagger_auto_schema # type: ignore
+from drf_yasg import openapi # type: ignore
 
 from .models import OTPRequest, User
 from .tasks import send_otp_via_console, send_otp_via_email
@@ -21,19 +18,96 @@ def generate_otp():
     return f"{random.randint(0, 999999):06d}"
 
 
-class UserProfileView(APIView):
-    permission_classes = [IsAuthenticated]
+# class UserProfileView(APIView):
+#     permission_classes = [IsAuthenticated]
+
+#     @swagger_auto_schema(
+#         operation_description="Foydalanuvchi profili ma'lumotlarini olish",
+#         responses={200: UserSerializer()}
+#     )
+#     def get(self, request):
+#         serializer = UserSerializer(request.user)
+#         return Response(serializer.data, status=status.HTTP_200_OK)
+
+class UserProfileCRUDView(generics.RetrieveUpdateDestroyAPIView):
+    """
+    Foydalanuvchi profilini ko‘rish (GET), tahrirlash (PUT/PATCH), va o‘chirish (DELETE)
+    uchun CRUD view.
+    """
+    serializer_class = UserSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_object(self):
+        # Har doim faqat o‘z profilini ko‘rsatadi
+        return self.request.user
 
     @swagger_auto_schema(
-        operation_description="Foydalanuvchi profili ma'lumotlarini olish",
+        operation_description="Foydalanuvchi profilini olish",
         responses={200: UserSerializer()}
     )
-    def get(self, request):
-        serializer = UserSerializer(request.user)
+    def get(self, request, *args, **kwargs):
+        serializer = self.get_serializer(self.get_object())
         return Response(serializer.data, status=status.HTTP_200_OK)
 
+    @swagger_auto_schema(
+        operation_description="Foydalanuvchi profilini yangilash",
+        request_body=UserSerializer,
+        responses={200: UserSerializer()}
+    )
+    def put(self, request, *args, **kwargs):
+        serializer = self.get_serializer(self.get_object(), data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
-class RequestOTPView(APIView):
+    @swagger_auto_schema(
+        operation_description="Foydalanuvchi profilining ayrim maydonlarini yangilash (PATCH)",
+        request_body=UserSerializer,
+        responses={200: UserSerializer()}
+    )
+    def patch(self, request, *args, **kwargs):
+        serializer = self.get_serializer(self.get_object(), data=request.data, partial=True)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+    @swagger_auto_schema(
+        operation_description="Foydalanuvchi profilini o‘chirish",
+        responses={204: 'Profil o‘chirildi'}
+    )
+    def delete(self, request, *args, **kwargs):
+        user = self.get_object()
+        user.delete()
+        return Response({'detail': 'Profil o‘chirildi'}, status=status.HTTP_204_NO_CONTENT)
+
+# class RequestOTPView(APIView):
+#     permission_classes = [permissions.AllowAny]
+
+#     @swagger_auto_schema(
+#         operation_description="Email yoki telefon orqali OTP so‘rash",
+#         request_body=RequestOTPSerializer,
+#         responses={
+#             200: openapi.Response(description="OTP yuborildi"),
+#             400: openapi.Response(description="Email yoki telefon kiritilishi kerak")
+#         }
+#     )
+#     def post(self, request):
+#         ser = RequestOTPSerializer(data=request.data)
+#         ser.is_valid(raise_exception=True)
+#         email = ser.validated_data.get('email')
+#         phone = ser.validated_data.get('phone_number')
+#         code = generate_otp()
+#         OTPRequest.objects.create(email=email, phone_number=phone, code=code)
+
+#         if email:
+#             send_otp_via_email.delay(email, code)
+#         else:
+#             send_otp_via_console.delay(phone, code)
+
+#         return Response({"message": "OTP sent successfully"}, status=status.HTTP_200_OK)
+
+class RequestOTPView(generics.CreateAPIView):
+    serializer_class = RequestOTPSerializer
     permission_classes = [permissions.AllowAny]
 
     @swagger_auto_schema(
@@ -44,11 +118,11 @@ class RequestOTPView(APIView):
             400: openapi.Response(description="Email yoki telefon kiritilishi kerak")
         }
     )
-    def post(self, request):
-        ser = RequestOTPSerializer(data=request.data)
-        ser.is_valid(raise_exception=True)
-        email = ser.validated_data.get('email')
-        phone = ser.validated_data.get('phone_number')
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        email = serializer.validated_data.get('email')
+        phone = serializer.validated_data.get('phone_number')
         code = generate_otp()
         OTPRequest.objects.create(email=email, phone_number=phone, code=code)
 
@@ -58,9 +132,48 @@ class RequestOTPView(APIView):
             send_otp_via_console.delay(phone, code)
 
         return Response({"message": "OTP sent successfully"}, status=status.HTTP_200_OK)
+    
+# class VerifyOTPView(APIView):
+#     permission_classes = [permissions.AllowAny]
 
+#     @swagger_auto_schema(
+#         operation_description="OTP tekshirish va JWT olish",
+#         request_body=VerifyOTPSerializer,
+#         responses={
+#             200: openapi.Response(description="JWT token qaytarildi"),
+#             400: openapi.Response(description="Noto‘g‘ri yoki muddati o‘tgan OTP")
+#         }
+#     )
+#     def post(self, request):
+#         ser = VerifyOTPSerializer(data=request.data)
+#         ser.is_valid(raise_exception=True)
+#         email = ser.validated_data.get('email')
+#         phone = ser.validated_data.get('phone_number')
+#         code = ser.validated_data.get('otp')
 
-class VerifyOTPView(APIView):
+#         otp_qs = OTPRequest.objects.filter(code=code, is_used=False)
+#         if email:
+#             otp_qs = otp_qs.filter(email=email)
+#         if phone:
+#             otp_qs = otp_qs.filter(phone_number=phone)
+
+#         otp_obj = otp_qs.order_by('-created_at').first()
+#         if not otp_obj or not otp_obj.is_valid():
+#             return Response({"detail": "Invalid or expired OTP"}, status=status.HTTP_400_BAD_REQUEST)
+
+#         otp_obj.is_used = True
+#         otp_obj.save()
+
+#         if email:
+#             user, created = User.objects.get_or_create(email=email, defaults={"is_active": True})
+#         else:
+#             user, created = User.objects.get_or_create(phone_number=phone, defaults={"is_active": True})
+
+#         refresh = RefreshToken.for_user(user)
+#         return Response({"access": str(refresh.access_token), "refresh": str(refresh)}, status=status.HTTP_200_OK)
+
+class VerifyOTPView(generics.CreateAPIView):
+    serializer_class = VerifyOTPSerializer
     permission_classes = [permissions.AllowAny]
 
     @swagger_auto_schema(
@@ -71,12 +184,12 @@ class VerifyOTPView(APIView):
             400: openapi.Response(description="Noto‘g‘ri yoki muddati o‘tgan OTP")
         }
     )
-    def post(self, request):
-        ser = VerifyOTPSerializer(data=request.data)
-        ser.is_valid(raise_exception=True)
-        email = ser.validated_data.get('email')
-        phone = ser.validated_data.get('phone_number')
-        code = ser.validated_data.get('otp')
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        email = serializer.validated_data.get('email')
+        phone = serializer.validated_data.get('phone_number')
+        code = serializer.validated_data.get('otp')
 
         otp_qs = OTPRequest.objects.filter(code=code, is_used=False)
         if email:
@@ -99,12 +212,50 @@ class VerifyOTPView(APIView):
         refresh = RefreshToken.for_user(user)
         return Response({"access": str(refresh.access_token), "refresh": str(refresh)}, status=status.HTTP_200_OK)
 
-
 class GoogleAuthSerializer(serializers.Serializer):
     id_token = serializers.CharField(required=True, help_text="Google id_token")
 
 
-class GoogleAuthView(APIView):
+# class GoogleAuthView(APIView):
+#     permission_classes = [permissions.AllowAny]
+
+#     @swagger_auto_schema(
+#         operation_description="Google OAuth2 orqali login qilish",
+#         request_body=GoogleAuthSerializer,
+#         responses={
+#             200: openapi.Response(description="JWT token qaytarildi"),
+#             400: openapi.Response(description="Id_token kerak yoki noto‘g‘ri token")
+#         }
+#     )
+#     def post(self, request):
+#         serializer = GoogleAuthSerializer(data=request.data)
+#         serializer.is_valid(raise_exception=True)
+#         id_token = serializer.validated_data['id_token']
+
+#         google_verify_url = f"https://oauth2.googleapis.com/tokeninfo?id_token={id_token}"
+#         r = requests.get(google_verify_url)
+#         if r.status_code != 200:
+#             return Response({"detail": "Invalid Google token"}, status=status.HTTP_400_BAD_REQUEST)
+#         data = r.json()
+#         google_sub = data.get('sub')
+#         email = data.get('email')
+
+#         if not google_sub:
+#             return Response({"detail": "Google token missing sub"}, status=status.HTTP_400_BAD_REQUEST)
+
+#         user, created = User.objects.get_or_create(
+#             google_sub_id=google_sub,
+#             defaults={"email": email, "is_active": True}
+#         )
+#         if created and email:
+#             user.email = email
+#             user.save()
+
+#         refresh = RefreshToken.for_user(user)
+#         return Response({"access": str(refresh.access_token), "refresh": str(refresh)}, status=status.HTTP_200_OK)
+
+class GoogleAuthView(generics.CreateAPIView):
+    serializer_class = GoogleAuthSerializer
     permission_classes = [permissions.AllowAny]
 
     @swagger_auto_schema(
@@ -115,8 +266,8 @@ class GoogleAuthView(APIView):
             400: openapi.Response(description="Id_token kerak yoki noto‘g‘ri token")
         }
     )
-    def post(self, request):
-        serializer = GoogleAuthSerializer(data=request.data)
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         id_token = serializer.validated_data['id_token']
 
@@ -142,11 +293,27 @@ class GoogleAuthView(APIView):
         refresh = RefreshToken.for_user(user)
         return Response({"access": str(refresh.access_token), "refresh": str(refresh)}, status=status.HTTP_200_OK)
 
-class UserListView(ListAPIView):
+# class UserListView(ListAPIView):
+#     queryset = User.objects.all().order_by('-created_at')
+#     serializer_class = UserSerializer
+#     permission_classes = [IsAuthenticated]
+
+#     def get(self, request, *args, **kwargs):
+#         if not getattr(request.user, 'is_admin', False):
+#             return Response({"detail": "Sizda bu amalni bajarish huquqi yo‘q."}, status=status.HTTP_403_FORBIDDEN)
+#         users = self.get_queryset()
+#         serializer = self.get_serializer(users, many=True)
+#         return Response(serializer.data)
+
+class UserListView(generics.ListAPIView):
     queryset = User.objects.all().order_by('-created_at')
     serializer_class = UserSerializer
     permission_classes = [IsAuthenticated]
 
+    @swagger_auto_schema(
+        operation_description="Barcha foydalanuvchilar ro‘yxatini olish (faqat adminlar uchun)",
+        responses={200: UserSerializer(many=True)}
+    )
     def get(self, request, *args, **kwargs):
         if not getattr(request.user, 'is_admin', False):
             return Response({"detail": "Sizda bu amalni bajarish huquqi yo‘q."}, status=status.HTTP_403_FORBIDDEN)
@@ -158,9 +325,51 @@ class FileUploadSerializer(serializers.Serializer):
     file = serializers.FileField(required=True, help_text="Yuklanadigan fayl (.pdf, .docx, .txt)")
 
 
-class ContractUploadView(APIView):
+# class ContractUploadView(APIView):
+#     permission_classes = [permissions.AllowAny]
+#     parser_classes = [parsers.MultiPartParser, parsers.FormParser]
+
+#     @swagger_auto_schema(
+#         operation_description="PDF, DOCX yoki TXT fayl yuklash va matnni ajratib olish.",
+#         request_body=FileUploadSerializer,
+#         responses={
+#             200: openapi.Response(description="Fayl matni muvaffaqiyatli ajratildi"),
+#             400: openapi.Response(description="Fayl yuborilmagan yoki noto‘g‘ri format")
+#         }
+#     )
+#     def post(self, request):
+#         serializer = FileUploadSerializer(data=request.data)
+#         serializer.is_valid(raise_exception=True)
+#         file = serializer.validated_data['file']
+
+#         filename = file.name.lower()
+#         temp_path = f"/tmp/{file.name}"
+#         with open(temp_path, "wb+") as temp_file:
+#             for chunk in file.chunks():
+#                 temp_file.write(chunk)
+
+#         text = ""
+#         if filename.endswith(".pdf"):
+#             reader = PdfReader(temp_path)
+#             for page in reader.pages:
+#                 text += page.extract_text() or ""
+#         elif filename.endswith(".docx"):
+#             doc = docx.Document(temp_path)
+#             text = "\n".join([p.text for p in doc.paragraphs])
+#         elif filename.endswith(".txt"):
+#             with open(temp_path, "r", encoding="utf-8") as f:
+#                 text = f.read()
+#         else:
+#             os.remove(temp_path)
+#             return Response({"detail": "Unsupported file type"}, status=status.HTTP_400_BAD_REQUEST)
+
+#         os.remove(temp_path)
+#         return Response({"text": text[:1000]}, status=status.HTTP_200_OK)
+
+class ContractUploadView(generics.CreateAPIView):
     permission_classes = [permissions.AllowAny]
     parser_classes = [parsers.MultiPartParser, parsers.FormParser]
+    serializer_class = FileUploadSerializer
 
     @swagger_auto_schema(
         operation_description="PDF, DOCX yoki TXT fayl yuklash va matnni ajratib olish.",
@@ -170,8 +379,8 @@ class ContractUploadView(APIView):
             400: openapi.Response(description="Fayl yuborilmagan yoki noto‘g‘ri format")
         }
     )
-    def post(self, request):
-        serializer = FileUploadSerializer(data=request.data)
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         file = serializer.validated_data['file']
 

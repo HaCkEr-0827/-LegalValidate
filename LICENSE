@@ -1,0 +1,25 @@
+# 🧾 LegalValidate Backend
+
+**LegalValidate** — bu yuridik hujjatlarni avtomatik tahlil qilish, foydalanuvchilarni boshqarish va obuna tizimini qo‘llab-quvvatlaydigan backend ilova.  
+Loyiha Django REST Framework asosida yozilgan bo‘lib, Celery, Redis, PostgreSQL va Docker (Podman) bilan integratsiyalashgan.
+
+---
+
+## ⚙️ Texnologiyalar
+
+| Komponent | Tavsif |
+|------------|---------|
+| 🐍 **Python 3.13** | Asosiy dasturlash tili |
+| 🌐 **Django 5.2.7** | Backend framework |
+| ⚙️ **Django REST Framework (DRF)** | API endpointlar |
+| 🧠 **Celery 5.5.3** | Asinxron background vazifalar |
+| 💾 **PostgreSQL 15** | Ma'lumotlar bazasi |
+| 💨 **Redis 7** | Celery broker va kesh |
+| 🧱 **Podman / Docker** | Konteyner muhit |
+| 🚀 **Gunicorn** | WSGI server (production uchun) |
+| 🧰 **drf-yasg / drf-spectacular** | Swagger API hujjatlari |
+
+---
+
+## 📦 Loyiha tuzilmasi
+

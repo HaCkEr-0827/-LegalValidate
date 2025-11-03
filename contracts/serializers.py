@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import ContractAnalysis
-from PyPDF2 import PdfReader
-import docx
+from PyPDF2 import PdfReader # type: ignore
+import docx # type: ignore
 
 class ContractAnalysisSerializer(serializers.ModelSerializer):
     class Meta:

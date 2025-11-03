@@ -19,9 +19,11 @@ class UserManager(BaseUserManager):
     def create_superuser(self, email, password=None, **extra_fields):
         extra_fields.setdefault('is_staff', True)
         extra_fields.setdefault('is_superuser', True)
+        extra_fields.setdefault('is_admin', True)
         if not email:
             raise ValueError("Superuser must have email")
         return self.create_user(email=email, password=password, **extra_fields)
+
 
 class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(unique=True, null=True, blank=True)
@@ -29,6 +31,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     full_name = models.CharField(max_length=255, null=True, blank=True)
     google_sub_id = models.CharField(max_length=255, null=True, blank=True, unique=True)
     is_active = models.BooleanField(default=True)
+    is_staff = models.BooleanField(default=False)
     is_admin = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
 
@@ -37,12 +40,13 @@ class User(AbstractBaseUser, PermissionsMixin):
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
 
+    def save(self, *args, **kwargs):
+        if self.is_admin:
+            self.is_staff = True
+        super().save(*args, **kwargs)
+
     def __str__(self):
         return self.email or self.phone_number or f"User {self.pk}"
-
-    @property
-    def is_staff(self):
-        return self.is_admin
 
 class OTPRequest(models.Model):
     email = models.EmailField(null=True, blank=True)

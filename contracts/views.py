@@ -1,11 +1,11 @@
 import os
-import docx
-from PyPDF2 import PdfReader
+import docx # type: ignore
+from PyPDF2 import PdfReader # type: ignore
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status, permissions, parsers
-from drf_yasg.utils import swagger_auto_schema
-from drf_yasg import openapi
+from drf_yasg.utils import swagger_auto_schema # type: ignore
+from drf_yasg import openapi# type: ignore
 from rest_framework import serializers
 from .models import ContractAnalysis
 from .tasks import analyze_contract_ai
@@ -13,7 +13,7 @@ from rest_framework import generics
 from .serializers import ContractAnalysisSerializer
 from .models import ContractAnalysis
 from rest_framework.decorators import api_view, permission_classes
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated 
 
 
 class FileUploadSerializer(serializers.Serializer):
@@ -85,7 +85,7 @@ def get_contract_result(request, pk):
     if contract.analysis_result:
         return Response({
             "id": contract.id,
-            "status": "Tahlil yakunlangan ✅",
+            "status": "Tahlil yakunlangan ",
             "result": contract.analysis_result,
             "created_at": contract.created_at,
         })

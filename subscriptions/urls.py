@@ -1,12 +1,12 @@
 from django.urls import path
 from .views import (
-    get_my_subscription,
-    select_subscription,
-    get_subscription_plans
+    GetsubscriptionPlansView,
+    SelectSubscriptionView,
+    MySubscriptionView
 )
 
 urlpatterns = [
-    path('plans/', get_subscription_plans),
-    path('select/', select_subscription),
-    path('my_subscriptions/', get_my_subscription),
+    path('plans/', GetsubscriptionPlansView.as_view(), name='subscription-plans'),
+    path('select/', SelectSubscriptionView.as_view(), name='subscription-select'),
+    path('me/', MySubscriptionView.as_view(), name='subscription-me'),
 ]
