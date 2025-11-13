@@ -8,7 +8,7 @@ openai.api_key = getattr(settings, "OPENAI_API_KEY", None)
 @shared_task
 def analyze_contract_ai(contract_id):
     """
-    Contract matnini AI orqali tahlil qilish.
+    Contract matnini AI orqali tahlil qiladi.
     Natija ContractAnalysis jadvaliga yoziladi.
     """
     contract = ContractAnalysis.objects.get(id=contract_id)
@@ -19,8 +19,8 @@ def analyze_contract_ai(contract_id):
             response = openai.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=[
-                    {"role": "system", "content": "You are a legal assistant."},
-                    {"role": "user", "content": f"Analyze this contract:\n{text}"}
+                    {"role": "system", "content": "You are a professional legal assistant."},
+                    {"role": "user", "content": f"Analyze this contract text:\n{text}"}
                 ],
                 max_tokens=500
             )
@@ -32,10 +32,10 @@ def analyze_contract_ai(contract_id):
         print(f"[Mock Mode] AI error: {e}")
         ai_text = (
             "⚠️ [Mock AI Response]\n"
-            "This is a simulated analysis since OpenAI API is not available.\n\n"
-            "**Summary:** Contract appears to be a standard agreement.\n"
-            "**Risks:** Confidentiality clause may be missing.\n"
-            "**Recommendations:** Add termination terms and review legal compliance."
+            "This is a simulated AI analysis (no OpenAI key found).\n\n"
+            "**Summary:** The contract seems standard.\n"
+            "**Risks:** Confidentiality clause missing.\n"
+            "**Recommendations:** Add termination and compliance clauses."
         )
 
     contract.analysis_result = ai_text

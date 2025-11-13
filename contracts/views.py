@@ -1,33 +1,33 @@
-import os
-import docx # type: ignore
-from PyPDF2 import PdfReader # type: ignore
+import docx
+from PyPDF2 import PdfReader
+from rest_framework import status, permissions, parsers, serializers
 from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status, permissions, parsers
-from drf_yasg.utils import swagger_auto_schema # type: ignore
-from drf_yasg import openapi# type: ignore
-from rest_framework import serializers
-from .models import ContractAnalysis
-from .tasks import analyze_contract_ai
-from rest_framework import generics
-from .serializers import ContractAnalysisSerializer
-from .models import ContractAnalysis
 from rest_framework.decorators import api_view, permission_classes
-from rest_framework.permissions import IsAuthenticated 
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
+from .models import ContractAnalysis
+from .serializers import ContractAnalysisSerializer
+from .tasks import analyze_contract_ai
+from shared.utils import success_response, error_response
 
 
 class FileUploadSerializer(serializers.Serializer):
+    """Swagger uchun fayl yuklash serializer"""
     file = serializers.FileField(required=True, help_text="Yuklanadigan fayl (.pdf, .docx, .txt)")
 
+
 class ContractUploadView(APIView):
+    """Faylni yuklash va AI tahlil jarayonini boshlash"""
     permission_classes = [permissions.IsAuthenticated]
-    parser_classes = [parsers.MultiPartParser, parsers.FormParser] 
+    parser_classes = [parsers.MultiPartParser, parsers.FormParser]
 
     @swagger_auto_schema(
-        operation_description="PDF, DOCX yoki TXT fayl yuklash, matnni ajratib olish va AI bilan tahlil qilish.",
+        operation_description="PDF, DOCX yoki TXT fayl yuklash, matnni ajratib olish va AI tahlilni boshlash.",
         request_body=FileUploadSerializer,
         responses={
-            200: openapi.Response(description="Fayl saqlandi va AI tahlil boshlandi"),
+            200: openapi.Response(description="Fayl yuklandi va AI tahlil boshlandi"),
             400: openapi.Response(description="Fayl yuborilmagan yoki noto‘g‘ri format")
         }
     )
@@ -36,79 +36,72 @@ class ContractUploadView(APIView):
         serializer.is_valid(raise_exception=True)
         file = serializer.validated_data['file']
 
+        # Contract yaratish
         contract = ContractAnalysis.objects.create(user=request.user, file=file)
 
-        text = ""
-        filename = file.name.lower()
-        if filename.endswith(".pdf"):
-            try:
+        # Fayldan matn olish
+        extracted_text = ""
+        try:
+            filename = file.name.lower()
+            if filename.endswith(".pdf"):
                 reader = PdfReader(file)
                 for page in reader.pages:
-                    text += page.extract_text() or ""
-            except Exception:
-                text = "Failed to extract text from PDF."
-        elif filename.endswith(".docx"):
-            try:
+                    extracted_text += page.extract_text() or ""
+            elif filename.endswith(".docx"):
                 doc = docx.Document(file)
-                text = "\n".join([p.text for p in doc.paragraphs])
-            except Exception:
-                text = "Failed to extract text from DOCX."
-        elif filename.endswith(".txt"):
-            try:
-                text = file.read().decode('utf-8')
-            except Exception:
-                text = "Failed to read TXT file."
-        else:
-            return Response({"detail": "Unsupported file type"}, status=status.HTTP_400_BAD_REQUEST)
+                extracted_text = "\n".join([p.text for p in doc.paragraphs])
+            elif filename.endswith(".txt"):
+                extracted_text = file.read().decode('utf-8')
+            else:
+                return error_response("Unsupported file type", status=400)
+        except Exception:
+            extracted_text = "Failed to extract text."
 
-        contract.extracted_text = text
+        contract.extracted_text = extracted_text
         contract.save()
+
+        # Celery task ishga tushadi
         analyze_contract_ai.delay(contract.id)
 
-        return Response({
-                "detail": "Fayl saqlandi va AI tahlil boshlandi.",
-                "contract_id": contract.id
-            }, status=status.HTTP_200_OK)
-
+        return success_response({
+            "contract_id": contract.id,
+            "message": "Fayl saqlandi va AI tahlil jarayoniga yuborildi."
+        })
     
-    
-
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def get_contract_result(request, pk):
+    """Muayyan shartnoma tahlil natijasini olish"""
     try:
         contract = ContractAnalysis.objects.get(id=pk, user=request.user)
     except ContractAnalysis.DoesNotExist:
-        return Response({"error": "Bunday contract topilmadi."}, status=404)
+        return error_response("Bunday contract topilmadi.", status=404)
 
     if contract.analysis_result:
-        return Response({
+        return success_response({
             "id": contract.id,
-            "status": "Tahlil yakunlangan ",
+            "status": "Tahlil yakunlangan ✅",
             "result": contract.analysis_result,
             "created_at": contract.created_at,
         })
 
-    default_result = {
-        "summary": "AI tahlil hali tugallanmagan. Hozircha shartnoma umumiy ko‘rinishda to‘g‘ri tuzilgan.",
-        "risks": ["Hujjatda ayrim bandlar hali tekshirilmagan."],
-        "recommendations": ["Tahlil tugagach, natijani qayta tekshirib chiqing."]
-    }
-
-    return Response({
+    return success_response({
         "id": contract.id,
         "status": "AI tahlil jarayonida ⏳",
-        "result": default_result,
+        "result": {
+            "summary": "Tahlil hali tugallanmagan.",
+            "risks": ["Ba’zi bandlar hali tekshirilmagan."],
+            "recommendations": ["Tahlil tugagach, natijani qayta tekshirib chiqing."]
+        },
         "created_at": contract.created_at,
     })
-    
-    
+
+
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def list_contracts(request):
-   
+    """Foydalanuvchining barcha shartnomalari ro‘yxati"""
     contracts = ContractAnalysis.objects.filter(user=request.user).order_by('-created_at')
     serializer = ContractAnalysisSerializer(contracts, many=True)
-    return Response(serializer.data, status=status.HTTP_200_OK)
-
+    return success_response(serializer.data)

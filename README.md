@@ -58,6 +58,10 @@ and provides secure authentication using **JWT** tokens.
 ### Using Docker / Podman
 ```
 podman-compose up --build -d
+podman network inspect legalvalidate_backend_default
+podman-compose up -d web
+podman-compose exec web python manage.py makemigrations
+podman-compose exec web python manage.py migrate
 ```
 
 Your app will be available at:  
@@ -73,7 +77,6 @@ python manage.py migrate
 podman exec -it web_app bash
 python manage.py createsuperuser
 celery -A config worker -l info
-python manage.py runserver
 ```
 
 ---

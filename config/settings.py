@@ -72,6 +72,7 @@ LOCAL_APPS = [
     "users",
     "contracts",
     "subscriptions",
+    'shared',
 ]
 
 INSTALLED_APPS = UNFOLD_APPS + DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
